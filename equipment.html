@@ -3,34 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | NC Cowboy Concrete Pumping</title>
-  <meta name="description" content="See NC Cowboy Concrete Pumping's equipment and recent work across Charlotte, NC and surrounding areas." />
+  <title>Our Equipment | NC Cowboy Concrete Pumping</title>
+  <meta name="description" content="Take a look at NC Cowboy Concrete Pumping's 2016 Putzmeister TK 60 line pump — the rig behind every pour in Charlotte, NC and surrounding areas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 12px; margin-top: 40px; }
-    .gallery-item { border-radius: var(--radius); overflow: hidden; position: relative; background: var(--navy-dk); }
-    .gallery-item:nth-child(1) { grid-row: span 2; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
-    .gallery-item:hover img { transform: scale(1.04); }
-    .gallery-ph {
-      width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 8px; padding: 20px; text-align: center; border: 2px dashed rgba(158,27,46,.25);
-    }
-    .gallery-ph-icon { font-size: 1.6rem; opacity: .5; }
-    .gallery-ph-label { font-family: var(--f-label); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(158,27,46,.6); }
-    .gallery-caption {
-      position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 16px;
-      background: linear-gradient(transparent, rgba(0,0,0,.75));
-      font-family: var(--f-label); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--red-lt);
-      opacity: 0; transition: var(--ease);
-    }
-    .gallery-item:hover .gallery-caption { opacity: 1; }
-    @media (max-width: 640px) { .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; } .gallery-item:nth-child(1) { grid-row: span 1; } }
-    @media (max-width: 420px) { .gallery-grid { grid-template-columns: 1fr; } }
-  </style>
 </head>
 <body>
 
@@ -43,8 +21,8 @@
     <nav class="header-nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="equipment.html">Equipment</a>
-      <a href="gallery.html" class="active">Gallery</a>
+      <a href="equipment.html" class="active">Equipment</a>
+      <a href="gallery.html">Gallery</a>
       <a href="index.html#areas">Areas</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -57,46 +35,75 @@
 <section class="page-hero">
   <div class="page-hero-stripe"></div>
   <div class="wrap page-hero-content">
-    <span class="eyebrow">Our Work</span>
-    <h1>Gallery</h1>
-    <p>A look at our equipment and job sites across the Charlotte region.</p>
+    <span class="eyebrow">Our Equipment</span>
+    <h1>2016 Putzmeister TK 60</h1>
+    <p>Take a full look at the line pump behind every job we run.</p>
   </div>
 </section>
 
 
-<section class="sec sec--dark">
+<section class="sec">
   <div class="wrap">
+    <span class="eyebrow eyebrow--dark">Take A Look</span>
+    <h2 class="sec-title">2016 Putzmeister TK 60 Line Pump</h2>
+    <div class="rule"></div>
+    <p class="sec-sub">Drag the photo below to get a feel for the rig — a full 360&deg; walk-around is coming soon.</p>
 
-    <div class="gallery-grid">
+    <div class="spin-viewer" id="pumpSpin" data-mode="tilt">
+      <span class="spin-badge">Example</span>
+      <div class="spin-hint">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><polyline points="21 3 21 9 15 9"/><path d="M21 12a9 9 0 0 1-9 9 9 9 0 0 1-9-9"/><polyline points="3 21 3 15 9 15"/></svg>
+        Click &amp; Drag
+      </div>
+      <img class="spin-img" src="pump-truck.jpg" alt="2016 Putzmeister TK 60 line pump" draggable="false" style="object-position:center 45%;" />
+    </div>
+    <p class="spin-note">Interactive preview — a full drag-to-spin 360&deg; of our own unit is coming soon.</p>
 
-      <div class="gallery-item">
+    <div class="equipment-specs">
+      <div class="spec-item"><strong>Make &amp; Model</strong><span>Putzmeister TK 60</span></div>
+      <div class="spec-item"><strong>Year</strong><span>2016</span></div>
+      <div class="spec-item"><strong>Type</strong><span>Trailer-Mounted Line Pump</span></div>
+    </div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="contact.html" class="btn btn-red">Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec sec--off">
+  <div class="wrap">
+    <span class="eyebrow eyebrow--dark">Why It Matters</span>
+    <h2 class="sec-title">Built For The Job</h2>
+    <div class="rule"></div>
+    <div class="detail-split">
+      <div class="detail-copy">
+        <p>Our TK 60 is a trailer-mounted line pump — it delivers concrete through hose rather than a boom, which means it can reach backyards, fenced-in lots, and tight-access sites a mixer truck or boom pump can't get near.</p>
+        <ul class="feature-list">
+          <li>Handles residential and light commercial pours</li>
+          <li>Maneuvers into tight-access backyards and job sites</li>
+          <li>Inspected and maintained between every job</li>
+          <li>Run by an experienced operator on every call</li>
+        </ul>
+        <a href="services.html" class="btn btn-navy">See Our Services</a>
+      </div>
+      <div class="detail-media">
         <img src="pump-truck.jpg" alt="NC Cowboy line pump rig on a job site" style="object-position:center 40%;" />
-        <div class="gallery-caption">Line Pump Rig — Charlotte, NC</div>
       </div>
-
-      <div class="gallery-item">
-        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Residential Pour — Coming Soon</span></div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Commercial Job — Coming Soon</span></div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Footings Pour — Coming Soon</span></div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">On-Site Crew — Coming Soon</span></div>
-      </div>
-
     </div>
+  </div>
+</section>
 
-    <div style="margin-top:28px;text-align:center;">
-      <p style="color:var(--gray-lt);margin-bottom:16px;">Follow us on Instagram for the latest jobs.</p>
-      <a href="https://www.instagram.com/nccowboyconcrete/" target="_blank" class="btn btn-red">View on Instagram</a>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Ready to Schedule a Pump?</h2>
+    <p>Tell us about your job and we'll get you a straight answer fast.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-navy">Get a Quote</a>
+      <a href="tel:4697719356" class="btn btn-outline-navy" style="background:var(--white);">(469) 771-9356</a>
     </div>
-
   </div>
 </section>
 
@@ -149,5 +156,6 @@
 <a href="tel:4697719356" class="btn btn-red float-call">Call for a Quote</a>
 
 <script src="script.js"></script>
+<script src="spin.js"></script>
 </body>
 </html>

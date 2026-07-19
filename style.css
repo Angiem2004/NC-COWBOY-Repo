@@ -368,3 +368,40 @@ a { color: inherit; text-decoration: none; }
   .float-call { display: inline-flex; align-items: center; gap: 8px; }
   .brand-text { display: none; }
 }
+
+/* ── 360 / interactive equipment viewer ── */
+.spin-viewer {
+  position: relative;
+  max-width: 760px;
+  margin: 44px auto 0;
+  background: var(--navy-dk);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(158,27,46,.25);
+  aspect-ratio: 4/3;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+  perspective: 1400px;
+}
+.spin-viewer:active { cursor: grabbing; }
+.spin-img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; transform-origin: center; will-change: transform; }
+.spin-badge {
+  position: absolute; top: 12px; right: 12px; z-index: 3;
+  background: rgba(0,0,0,.6); color: var(--red-lt);
+  font-family: var(--f-label); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase;
+  padding: 5px 11px; border-radius: 4px; border: 1px solid rgba(158,27,46,.4);
+}
+.spin-hint {
+  position: absolute; inset: 0; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  color: #fff; font-family: var(--f-label); letter-spacing: .14em; text-transform: uppercase; font-size: .82rem;
+  background: rgba(7,18,36,.3); transition: opacity .35s ease; pointer-events: none;
+}
+.spin-viewer.spun .spin-hint { opacity: 0; }
+.spin-note { font-size: .8rem; color: var(--gray); margin-top: 14px; text-align: center; }
+.equipment-specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.spec-item { text-align: center; padding: 18px; border: 1px solid #e5e3de; border-radius: var(--radius); background: var(--white); }
+.spec-item strong { display: block; font-family: var(--f-label); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
+.spec-item span { font-size: .95rem; color: var(--navy); }
+@media (max-width: 640px) { .equipment-specs { grid-template-columns: 1fr; } }
