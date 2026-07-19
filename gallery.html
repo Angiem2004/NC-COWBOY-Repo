@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | NC Cowboy Concrete Pumping</title>
+  <meta name="description" content="See NC Cowboy Concrete Pumping's equipment and recent work across Charlotte, NC and surrounding areas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 12px; margin-top: 40px; }
+    .gallery-item { border-radius: var(--radius); overflow: hidden; position: relative; background: var(--navy-dk); }
+    .gallery-item:nth-child(1) { grid-row: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-ph {
+      width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 8px; padding: 20px; text-align: center; border: 2px dashed rgba(158,27,46,.25);
+    }
+    .gallery-ph-icon { font-size: 1.6rem; opacity: .5; }
+    .gallery-ph-label { font-family: var(--f-label); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(158,27,46,.6); }
+    .gallery-caption {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 16px;
+      background: linear-gradient(transparent, rgba(0,0,0,.75));
+      font-family: var(--f-label); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--red-lt);
+      opacity: 0; transition: var(--ease);
+    }
+    .gallery-item:hover .gallery-caption { opacity: 1; }
+    @media (max-width: 640px) { .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; } .gallery-item:nth-child(1) { grid-row: span 1; } }
+    @media (max-width: 420px) { .gallery-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="NC Cowboy Concrete Pumping" class="brand-logo" />
+      <span class="brand-text">NC Cowboy<span>Concrete Pumping</span></span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="index.html#areas">Areas</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="tel:4697719356" class="header-phone">(469) 771-9356</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="page-hero-stripe"></div>
+  <div class="wrap page-hero-content">
+    <span class="eyebrow">Our Work</span>
+    <h1>Gallery</h1>
+    <p>A look at our equipment and job sites across the Charlotte region.</p>
+  </div>
+</section>
+
+
+<section class="sec sec--dark">
+  <div class="wrap">
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="pump-truck.jpg" alt="NC Cowboy line pump rig on a job site" style="object-position:center 40%;" />
+        <div class="gallery-caption">Line Pump Rig — Charlotte, NC</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Residential Pour — Coming Soon</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Commercial Job — Coming Soon</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">Footings Pour — Coming Soon</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-ph"><span class="gallery-ph-icon">🤠</span><span class="gallery-ph-label">On-Site Crew — Coming Soon</span></div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:28px;text-align:center;">
+      <p style="color:var(--gray-lt);margin-bottom:16px;">Follow us on Instagram for the latest jobs.</p>
+      <a href="https://www.instagram.com/nccowboyconcrete/" target="_blank" class="btn btn-red">View on Instagram</a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="NC Cowboy Concrete Pumping" />
+        <div>
+          <div class="footer-brand-text">NC Cowboy<br>Concrete Pumping</div>
+          <p>Concrete pumping service covering Charlotte, NC and surrounding communities. Residential and commercial pours.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/nccowboyconcrete/" target="_blank" title="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="tel:4697719356" title="Call Us">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.91-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#line-pump">Line Pump Service</a></li>
+          <li><a href="services.html#residential">Residential Pours</a></li>
+          <li><a href="services.html#commercial">Commercial &amp; Foundations</a></li>
+          <li><a href="services.html#dispatch">Same-Day Dispatch</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="index.html#areas">Service Areas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NC Cowboy Concrete Pumping. All rights reserved.</span>
+      <span>Charlotte, NC &amp; Surrounding Areas</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:4697719356" class="btn btn-red float-call">Call for a Quote</a>
+
+<script src="script.js"></script>
+</body>
+</html>
